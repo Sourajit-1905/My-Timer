@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Professional Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-container"></div>
+    
+    <main class="timer-card">
+        <header>
+            <h1 id="display">00:00:00</h1>
+        </header>
+
+        <section class="input-group" id="input-section">
+            <div class="field">
+                <input type="number" id="hours" inputmode="numeric" placeholder="00">
+                <label>HOURS</label>
+            </div>
+            <span class="separator">:</span>
+            <div class="field">
+                <input type="number" id="minutes" inputmode="numeric" placeholder="00">
+                <label>MINS</label>
+            </div>
+            <span class="separator">:</span>
+            <div class="field">
+                <input type="number" id="seconds" inputmode="numeric" placeholder="00">
+                <label>SECS</label>
+            </div>
+        </section>
+
+        <footer class="controls">
+            <button id="startBtn" class="primary-btn">Start</button>
+            <button id="pauseBtn" disabled>Pause</button>
+            <button id="resetBtn">Reset</button>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
